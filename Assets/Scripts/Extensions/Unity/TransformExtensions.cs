@@ -49,6 +49,48 @@ namespace Extensions.Unity
             };
         }
         /// <summary>
+        /// Sets the local position of X for this transform.
+        /// </summary>
+        /// <param name="transform">The transform to modify.</param>
+        /// <param name="value">The new X value.</param>
+        public static void SetLocalPositionX(this Transform transform, float value)
+        {
+            transform.localPosition = new Vector3
+            {
+                x = value,
+                y = transform.localPosition.y,
+                z = transform.localPosition.z
+            };
+        }
+        /// <summary>
+        /// Sets the local position of Y for this transform.
+        /// </summary>
+        /// <param name="transform">The transform to modify.</param>
+        /// <param name="value">The new Y value.</param>
+        public static void SetLocalPositionY(this Transform transform, float value)
+        {
+            transform.localPosition = new Vector3
+            {
+                x = transform.localPosition.x,
+                y = value,
+                z = transform.localPosition.z
+            };
+        }
+        /// <summary>
+        /// Sets the local position of Z for this transform.
+        /// </summary>
+        /// <param name="transform">The transform to modify.</param>
+        /// <param name="value">The new Z value.</param>
+        public static void SetLocalPositionZ(this Transform transform, float value)
+        {
+            transform.localPosition = new Vector3
+            {
+                x = transform.localPosition.x,
+                y = transform.localPosition.y,
+                z = value
+            };
+        }
+        /// <summary>
         /// Sets the global euler angle X for this transform.
         /// </summary>
         /// <param name="transform">The transform to modify.</param>

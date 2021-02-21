@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 1997776840}
   - component: {fileID: 1997776837}
   - component: {fileID: 1997776842}
-  - component: {fileID: 1997776841}
+  - component: {fileID: 1997776838}
   m_Layer: 0
   m_Name: Click Move Actor
   m_TagString: Untagged
@@ -637,22 +637,7 @@ MonoBehaviour:
   jumpHeight: 1
   jumpDuration: 1
   jumpGapDistance: 3
---- !u!4 &1997776840
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1997776836}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.41, y: 0, z: 3.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1309365586}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1997776841
+--- !u!114 &1997776838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -680,8 +665,8 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1997776842}
-        m_TargetAssemblyTypeName: Input.MeshClickBroadcaster, Assembly-CSharp
-        m_MethodName: RecieveInput
+        m_TargetAssemblyTypeName: Input.ColliderClickBroadcaster, Assembly-CSharp
+        m_MethodName: RecieveClicked
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -699,13 +684,28 @@ MonoBehaviour:
     m_ActionName: Default Controls/Reset[/Keyboard/r]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 9226ca18-8b8f-4644-9164-13c775990db3
-    m_ActionName: Default Controls/Exit[/Keyboard/escape]
+    m_ActionId: 8c8878dd-db86-4463-9b3c-1c04612c6a44
+    m_ActionName: Default Controls/Right Click[/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Default Controls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!4 &1997776840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997776836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.41, y: 0, z: 3.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1309365586}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1997776842
 MonoBehaviour:
   m_ObjectHideFlags: 0

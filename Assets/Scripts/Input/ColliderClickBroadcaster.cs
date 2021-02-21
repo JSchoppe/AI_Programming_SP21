@@ -22,6 +22,10 @@ namespace Input
         /// Called whenever a collider is clicked in the scene.
         /// </summary>
         public event ColliderClickedListener ColliderClicked;
+        /// <summary>
+        /// Called whenever a collider is right clicked in the scene.
+        /// </summary>
+        public event ColliderClickedListener ColliderRightClicked;
         #endregion
         #region Temporary Use Fields
         private RaycastHit hit;
@@ -41,7 +45,7 @@ namespace Input
         /// <summary>
         /// Simulates a click input for this broadcaster.
         /// </summary>
-        public void RecieveInput()
+        public void RecieveClicked()
         {
             // If this is a button down event and a raycast
             // finds a suitable hit target...
@@ -57,11 +61,36 @@ namespace Input
         /// Used by the Unity Input System to invoke on clicked behaviour.
         /// </summary>
         /// <param name="context">The input action context.</param>
-        public void RecieveInput(InputAction.CallbackContext context)
+        public void RecieveClicked(InputAction.CallbackContext context)
         {
             // Verify the mouse button is down.
             if (context.ButtonPressedDown())
-                RecieveInput();
+                RecieveClicked();
+        }
+        /// <summary>
+        /// Simulates a right click input for this broadcaster.
+        /// </summary>
+        public void RecieveRightClicked()
+        {
+            // If this is a button down event and a raycast
+            // finds a suitable hit target...
+            if (Physics.Raycast(
+                    Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue()),
+                    out hit,
+                    maxCheckDistance,
+                    layerMask))
+                // Then notify any listeners that this action has been invoked.
+                ColliderRightClicked?.Invoke(hit);
+        }
+        /// <summary>
+        /// Used by the Unity Input System to invoke on clicked behaviour.
+        /// </summary>
+        /// <param name="context">The input action context.</param>
+        public void RecieveRightClicked(InputAction.CallbackContext context)
+        {
+            // Verify the mouse button is down.
+            if (context.ButtonPressedDown())
+                RecieveRightClicked();
         }
         #endregion
     }

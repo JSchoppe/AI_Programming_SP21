@@ -52,6 +52,13 @@ namespace AI.Actors.StateQueueActors
             willInterupt = true;
             AdvanceStateFeed();
         }
+        /// <summary>
+        /// Removes all currently queued actions.
+        /// </summary>
+        public void ClearState()
+        {
+            stateQueue.Clear();
+        }
         #endregion
         #region State Enter/Exit Piping Methods
         /// <summary>
