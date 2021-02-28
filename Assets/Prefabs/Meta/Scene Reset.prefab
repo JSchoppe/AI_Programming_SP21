@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4686518866484005481}
   - component: {fileID: 4686518866484005486}
-  - component: {fileID: 4686518866484005487}
+  - component: {fileID: 1073811951992090021}
   m_Layer: 0
   m_Name: Scene Reset
   m_TagString: Untagged
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed107bd34826c7e4a8a636d04330f489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4686518866484005487
+--- !u!114 &1073811951992090021
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,8 +91,12 @@ MonoBehaviour:
     m_ActionName: Default Controls/Reset[/Keyboard/r]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 9226ca18-8b8f-4644-9164-13c775990db3
-    m_ActionName: Default Controls/Exit[/Keyboard/escape]
+    m_ActionId: 639ce0b6-3627-44dc-8f9a-05b1876571a4
+    m_ActionName: Default Controls/Left Stick[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6d2ed2d6-a03d-43d1-a1a6-9a7faa831932
+    m_ActionName: Default Controls/Right Stick[/Mouse/delta]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Default Controls

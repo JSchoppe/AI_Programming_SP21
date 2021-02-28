@@ -22,10 +22,18 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Right Click",
-                    "type": "Button",
-                    "id": "8c8878dd-db86-4463-9b3c-1c04612c6a44",
-                    "expectedControlType": "Button",
+                    "name": "Left Stick",
+                    "type": "Value",
+                    "id": "639ce0b6-3627-44dc-8f9a-05b1876571a4",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Right Stick",
+                    "type": "Value",
+                    "id": "6d2ed2d6-a03d-43d1-a1a6-9a7faa831932",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -54,13 +62,68 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "206f1e7b-2d7e-4357-9b96-fd947aa1cb0d",
-                    "path": "<Mouse>/rightButton",
+                    "name": "Keyboard",
+                    "id": "20637515-381f-4419-96e0-b9d7968f34e4",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Right Click",
+                    "action": "Left Stick",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "bf4d581e-7ae0-428c-8d09-4b44c5bd9b37",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Stick",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "b90ea838-b4be-4e59-bf3a-b2703b2221b0",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Stick",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "9505aad7-7b80-4e33-a788-3ce0aa9ef544",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Stick",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2af20354-9654-48c2-b0cf-863dbfe34d38",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Stick",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "1e1c8e97-e835-47fa-92df-88b906e7ab97",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Stick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

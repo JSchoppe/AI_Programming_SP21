@@ -8,6 +8,9 @@ namespace Extensions.CSharp
     /// </summary>
     public static class IListExtensions
     {
+        #region Static Fields
+        private static readonly Random random = new Random();
+        #endregion
         #region Argument Checking
         /// <summary>
         /// Checks if the given arguments are valid indices in this array.
@@ -36,6 +39,17 @@ namespace Extensions.CSharp
             for (int i = 0; i < collection.Count; i++)
                 converted[i] = accessor(collection[i]);
             return converted;
+        }
+        #endregion
+        #region Random Selection
+        /// <summary>
+        /// Retrieves a random element from the collection.
+        /// </summary>
+        /// <param name="collection">The collection to pull from.</param>
+        /// <returns>Any element within the collection</returns>
+        public static T RandomElement<T>(this IList<T> collection)
+        {
+            return collection[random.Next(0, collection.Count)];
         }
         #endregion
     }

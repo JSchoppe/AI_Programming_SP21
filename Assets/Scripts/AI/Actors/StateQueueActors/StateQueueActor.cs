@@ -30,7 +30,7 @@ namespace AI.Actors.StateQueueActors
         /// Pushes new actor state to the back of the queue.
         /// </summary>
         /// <param name="states">The new state data.</param>
-        public void EnqueueState(params TState[] states)
+        public virtual void EnqueueState(params TState[] states)
         {
             // Add the new state data and recall advance
             // state in case the actor is currently idle.
@@ -43,7 +43,7 @@ namespace AI.Actors.StateQueueActors
         /// any other state in the queue.
         /// </summary>
         /// <param name="states">The new state data.</param>
-        public void EnqueueStateInterrupt(params TState[] states)
+        public virtual void EnqueueStateInterrupt(params TState[] states)
         {
             // Clear all other states and place in new state.
             stateQueue.Clear();
@@ -59,6 +59,11 @@ namespace AI.Actors.StateQueueActors
         {
             stateQueue.Clear();
         }
+        /// <summary>
+        /// Implement this to react to the actor running out
+        /// of state to act on.
+        /// </summary>
+        protected virtual void OnStatesExhausted(){ }
         #endregion
         #region State Enter/Exit Piping Methods
         /// <summary>
@@ -111,7 +116,10 @@ namespace AI.Actors.StateQueueActors
                     // If there is no state, reset the sentinel
                     // value of currentlyExecuting.
                     else
+                    {
                         currentlyExecuting = new TState[0];
+                        OnStatesExhausted();
+                    }
                 }
             }
         }
