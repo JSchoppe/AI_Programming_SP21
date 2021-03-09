@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Generators
+namespace AI_PROG_SP21.Generators
 {
     /// <summary>
     /// Base class for generators that instantiate GameObjects.

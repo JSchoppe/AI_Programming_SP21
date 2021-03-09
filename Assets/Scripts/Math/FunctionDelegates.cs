@@ -1,4 +1,4 @@
-﻿namespace Math
+﻿namespace AI_PROG_SP21.Math
 {
     /// <summary>
     /// Represents a continuous mathematical function.

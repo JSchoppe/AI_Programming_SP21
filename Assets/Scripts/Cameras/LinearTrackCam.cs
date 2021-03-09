@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
-using Debug.Gizmos;
 
-namespace Cameras
+using AI_PROG_SP21.Debug.Gizmos;
+
+namespace AI_PROG_SP21.Cameras
 {
     /// <summary>
     /// Implements a camera that follows a track to get as close to the target as possible.

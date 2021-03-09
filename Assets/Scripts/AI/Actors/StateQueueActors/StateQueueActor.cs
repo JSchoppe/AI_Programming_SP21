@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace AI.Actors.StateQueueActors
+namespace AI_PROG_SP21.AI.Actors.StateQueueActors
 {
     /// <summary>
     /// Base class for AI Actors that utilize an action queue.

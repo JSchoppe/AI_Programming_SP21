@@ -1,4 +1,4 @@
-﻿namespace Distributions
+﻿namespace AI_PROG_SP21.Distributions
 {
     /// <summary>
     /// Base class for all distribution collections.

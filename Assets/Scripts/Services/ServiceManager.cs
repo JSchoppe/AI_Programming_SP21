@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Services
+namespace AI_PROG_SP21.Services
 {
     /// <summary>
     /// Handles single instance services.
@@ -8,7 +8,7 @@ namespace Services
     public static class ServiceManager
     {
         #region Services Collection Field
-        private static List<object> services;
+        private static readonly List<object> services;
         #endregion
         #region Static Initializer
         static ServiceManager()

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace AI.Actors.GroupActors
+namespace AI_PROG_SP21.AI.Actors.GroupActors
 {
     /// <summary>
     /// Base class for actors that respond to other actors of the same class.

@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using Debug.Gizmos;
-using Extensions.CSharp;
 
-namespace Generators
+using AI_PROG_SP21.Debug.Gizmos;
+using AI_PROG_SP21.Extensions.CSharp;
+
+namespace AI_PROG_SP21.Generators
 {
     /// <summary>
     /// Generates objects in a two dimensional hexagonal grid pattern.

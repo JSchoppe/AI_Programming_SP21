@@ -1,14 +1,15 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.AI;
-using EngineInterop;
-using AI.Actors.StateQueueActors;
-using NavMesh;
-using Distributions;
-using Services;
-using Extensions.CSharp;
 
-namespace AI.FastFoodActors
+using AI_PROG_SP21.EngineInterop;
+using AI_PROG_SP21.AI.Actors.StateQueueActors;
+using AI_PROG_SP21.NavMesh;
+using AI_PROG_SP21.Distributions;
+using AI_PROG_SP21.Services;
+using AI_PROG_SP21.Extensions.CSharp;
+
+namespace AI_PROG_SP21.AI.FastFoodActors
 {
     /// <summary>
     /// Implements a fast food customer behaviour.
@@ -57,7 +58,7 @@ namespace AI.FastFoodActors
         [Tooltip("The nav mesh agent component.")]
         [SerializeField] private NavMeshAgent agent = default;
         [Tooltip("Tracks the nav mesh agent's completion state.")]
-        [SerializeField] private NavMeshUpdateWrapper agentTracker = default;
+        [SerializeField] private NavMeshWrapper agentTracker = default;
         [Header("Navigation Parameters")]
         [Tooltip("The proximity tolerance to the register.")]
         [SerializeField] private float spacingFromRegister = 1f;

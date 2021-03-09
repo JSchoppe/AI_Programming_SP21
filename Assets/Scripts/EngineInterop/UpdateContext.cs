@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EngineInterop
+namespace AI_PROG_SP21.EngineInterop
 {
     #region Interface
     /// <summary>

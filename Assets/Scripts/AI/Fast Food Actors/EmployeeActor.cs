@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using EngineInterop;
-using AI.Actors.StateQueueActors;
-using NavMesh;
-using Extensions.CSharp;
-using Distributions;
-using Services;
 
-namespace AI.FastFoodActors
+using AI_PROG_SP21.EngineInterop;
+using AI_PROG_SP21.AI.Actors.StateQueueActors;
+using AI_PROG_SP21.NavMesh;
+using AI_PROG_SP21.Extensions.CSharp;
+using AI_PROG_SP21.Distributions;
+using AI_PROG_SP21.Services;
+
+namespace AI_PROG_SP21.AI.FastFoodActors
 {
     /// <summary>
     /// Implements a fast food employee behaviour.
@@ -56,7 +57,7 @@ namespace AI.FastFoodActors
         [Tooltip("The nav mesh agent component.")]
         [SerializeField] private NavMeshAgent agent = default;
         [Tooltip("Tracks the nav mesh agent's completion state.")]
-        [SerializeField] private NavMeshUpdateWrapper agentTracker = default;
+        [SerializeField] private NavMeshWrapper agentTracker = default;
         [Header("Navigation Parameters")]
         [Tooltip("The proximity tolerance for general location inspection.")]
         [SerializeField] private float spacingFromInspection = 1f;
@@ -153,7 +154,7 @@ namespace AI.FastFoodActors
             switch (state.behaviour)
             {
                 case Behaviour.InspectingLocation: InspectingLocationEnter(state); break;
-                case Behaviour.MakingFood: MakingFoodEnter(state); break;
+                case Behaviour.MakingFood: MakingFoodEnter(); break;
                 case Behaviour.DeliveringFood: DeliveringFoodEnter(state); break;
                 default: throw new NotImplementedException();
             }
@@ -194,7 +195,7 @@ namespace AI.FastFoodActors
         #region State: Making Food
         private int stationsVisited;
         private int currentStationsNeeded;
-        private void MakingFoodEnter(State state)
+        private void MakingFoodEnter()
         {
             // Generate the parameters for this meal.
             stationsVisited = 0;

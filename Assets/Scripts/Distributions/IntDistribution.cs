@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Distributions
+namespace AI_PROG_SP21.Distributions
 {
     /// <summary>
     /// A distribution for ints that can be used in the inspector.

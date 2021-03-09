@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Extensions.CSharp;
 
-namespace Graphs.JointedGraph
+using AI_PROG_SP21.Extensions.CSharp;
+
+namespace AI_PROG_SP21.Graphs.JointedGraph
 {
     /// <summary>
     /// Base class for jointed graph collections.
@@ -158,8 +159,7 @@ namespace Graphs.JointedGraph
                 routeScore.Add(node, new RouteData());
             // Initialize the open nodes collection
             // with the start point of the path.
-            List<Node> openNodes = new List<Node>();
-            openNodes.Add(nodes[startNode]);
+            List<Node> openNodes = new List<Node> { nodes[startNode] };
             routeScore[nodes[startNode]].travelCost = 0f;
             routeScore[nodes[startNode]].heuristicCost =
                 GetHeuristic(nodes[startNode], nodes[endNode]);
@@ -170,7 +170,7 @@ namespace Graphs.JointedGraph
                 // Find the lowest cost of current movement options.
                 Node current = openNodes[0];
                 for (int i = 1; i < openNodes.Count; i++)
-                    if (routeScore[openNodes[i]].totalCost < routeScore[current].totalCost)
+                    if (routeScore[openNodes[i]].TotalCost < routeScore[current].TotalCost)
                         current = openNodes[i];
                 // Return the path if the end has been found.	
                 if (current == nodes[endNode])
@@ -274,7 +274,7 @@ namespace Graphs.JointedGraph
             public Node parent;
             public bool calculated;
             public float heuristicCost, travelCost;
-            public float totalCost => heuristicCost + travelCost;
+            public float TotalCost => heuristicCost + travelCost;
             public RouteData()
             {
                 calculated = false;

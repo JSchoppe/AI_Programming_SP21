@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Debug.Gizmos
+namespace AI_PROG_SP21.Debug.Gizmos
 {
 #if UNITY_EDITOR
     /// <summary>

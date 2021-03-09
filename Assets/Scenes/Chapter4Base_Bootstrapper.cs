@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Distributions;
-using AI.FastFoodActors;
-using Extensions.CSharp;
 
-namespace Scenes
+using AI_PROG_SP21.AI.FastFoodActors;
+using AI_PROG_SP21.Distributions;
+using AI_PROG_SP21.Extensions.CSharp;
+
+namespace AI_PROG_SP21.Scenes
 {
     // TODO much of this code should be abstracted into a manager class.
     // This contains the hard coded scene logic.
@@ -88,6 +89,7 @@ namespace Scenes
                 // If there is space:
                 if (currentCustomerCount < maxCustomers)
                 {
+                    currentCustomerCount++;
                     // Take a seat for this actor.
                     int seatIndex = GetRandomFreeSeat();
                     seatTaken[seatIndex] = true;
@@ -145,6 +147,7 @@ namespace Scenes
         #region Customer Exited Listener
         private void OnCustomerExitedMap(CustomerActor customer)
         {
+            currentCustomerCount--;
             // Free the seat that was taken by the actor.
             seatTaken[assignedSeats[customer]] = false;
             assignedSeats.Remove(customer);

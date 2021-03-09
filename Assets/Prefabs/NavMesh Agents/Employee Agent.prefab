@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d6245ad948f2d4f908077872deca95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyLocations: {fileID: 0}
   agent: {fileID: 1972749905125865648}
   agentTracker: {fileID: 6426577375680556336}
   spacingFromInspection: 1
@@ -145,7 +146,6 @@ MonoBehaviour:
     min: 4
     max: 12
     distributionType: 0
-  keyLocations: {fileID: 0}
 --- !u!114 &6426577375680556336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,10 +155,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 484242977961553490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96be3825a6a8db046a2c895846b349ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0d47167547ffa4493c9bd3af8677cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tolerance: 0.5
+  tolerance: 0
   agent: {fileID: 1972749905125865648}
 --- !u!195 &1972749905125865648
 NavMeshAgent:

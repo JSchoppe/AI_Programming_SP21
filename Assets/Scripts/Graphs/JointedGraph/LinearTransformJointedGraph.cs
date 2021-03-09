@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Graphs.JointedGraph
+namespace AI_PROG_SP21.Graphs.JointedGraph
 {
     /// <summary>
     /// Implements a jointed graph using Transforms as the nodes.

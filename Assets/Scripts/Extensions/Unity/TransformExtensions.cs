@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Extensions.Unity
+namespace AI_PROG_SP21.Extensions.Unity
 {
     /// <summary>
     /// Provides extensions for Transform.

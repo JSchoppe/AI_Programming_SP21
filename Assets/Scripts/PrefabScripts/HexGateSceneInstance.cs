@@ -1,9 +1,10 @@
 ﻿using System;
 using UnityEngine;
-using Input;
-using Graphs.JointedGraph;
 
-namespace PrefabScripts
+using AI_PROG_SP21.Graphs.JointedGraph;
+using AI_PROG_SP21.Input;
+
+namespace AI_PROG_SP21.PrefabScripts
 {
     /// <summary>
     /// Holds the state for a patternable hex gate.

@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
-using Extensions.Unity;
-using Extensions.CSharp;
 
-namespace Input
+using AI_PROG_SP21.Extensions.Unity;
+using AI_PROG_SP21.Extensions.CSharp;
+
+namespace AI_PROG_SP21.Input
 {
     #region Broadcaster Listener Delegates
     /// <summary>

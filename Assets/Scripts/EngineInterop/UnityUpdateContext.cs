@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace EngineInterop
+namespace AI_PROG_SP21.EngineInterop
 {
     /// <summary>
     /// Exposes the update loops in Unity.

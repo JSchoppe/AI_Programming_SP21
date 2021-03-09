@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AI.Actors.GroupActors
+namespace AI_PROG_SP21.AI.Actors.GroupActors
 {
     /// <summary>
     /// An actor that dims a light source when

@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using AI.Actors.StateQueueActors;
-using Graphs.JointedGraph;
-using PrefabScripts;
-using Generators;
-using Input;
-using Extensions.Unity;
 
-namespace Scenes
+using AI_PROG_SP21.AI.Actors.StateQueueActors;
+using AI_PROG_SP21.Graphs.JointedGraph;
+using AI_PROG_SP21.PrefabScripts;
+using AI_PROG_SP21.Generators;
+using AI_PROG_SP21.Input;
+using AI_PROG_SP21.Extensions.Unity;
+
+namespace AI_PROG_SP21.Scenes
 {
     // This contains the hard coded scene logic.
     /// <summary>

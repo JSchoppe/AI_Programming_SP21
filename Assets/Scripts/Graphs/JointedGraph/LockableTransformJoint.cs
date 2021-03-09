@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Graphs.JointedGraph
+namespace AI_PROG_SP21.Graphs.JointedGraph
 {
     /// <summary>
     /// Holds data for a lockable joint between transforms.

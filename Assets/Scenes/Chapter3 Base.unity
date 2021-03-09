@@ -409,9 +409,17 @@ MonoBehaviour:
     m_ActionId: 8d05f80f-a677-42e7-b0df-fb2fd1e898ac
     m_ActionName: Default Controls/Reset[/Keyboard/r]
   - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 639ce0b6-3627-44dc-8f9a-05b1876571a4
+    m_ActionName: Default Controls/Left Stick[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6d2ed2d6-a03d-43d1-a1a6-9a7faa831932
+    m_ActionName: Default Controls/Right Stick[/Mouse/delta]
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 700555857}
-        m_TargetAssemblyTypeName: Input.ColliderClickBroadcaster, Assembly-CSharp
+        m_TargetAssemblyTypeName: AI_PROG_SP21.Input.ColliderClickBroadcaster, Assembly-CSharp
         m_MethodName: RecieveRightClicked
         m_Mode: 0
         m_Arguments:
@@ -422,7 +430,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 8c8878dd-db86-4463-9b3c-1c04612c6a44
+    m_ActionId: c5a41d02-d784-4f28-a0b1-4c9cf0d56ed1
     m_ActionName: Default Controls/Right Click[/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 

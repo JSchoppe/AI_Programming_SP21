@@ -1,13 +1,14 @@
 ﻿using System;
 using UnityEngine;
-using EngineInterop;
-using Services;
-using Input;
-using Math;
-using Extensions.Unity;
-using Extensions.CSharp;
 
-namespace AI.Actors.StateQueueActors
+using AI_PROG_SP21.EngineInterop;
+using AI_PROG_SP21.Services;
+using AI_PROG_SP21.Input;
+using AI_PROG_SP21.Math;
+using AI_PROG_SP21.Extensions.Unity;
+using AI_PROG_SP21.Extensions.CSharp;
+
+namespace AI_PROG_SP21.AI.Actors.StateQueueActors
 {
     /// <summary>
     /// An actor that follows the mouse click to a position on the scene geometry.

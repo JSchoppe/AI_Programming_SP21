@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Cameras
+namespace AI_PROG_SP21.Cameras
 {
     /// <summary>
     /// Replicates the free cam editor behaviour for runtime.

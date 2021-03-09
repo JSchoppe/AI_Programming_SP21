@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
-using EngineInterop;
-using Graphs.JointedGraph;
-using Distributions;
-using Services;
-using Extensions.CSharp;
 
-namespace AI.Actors.StateQueueActors
+using AI_PROG_SP21.EngineInterop;
+using AI_PROG_SP21.Graphs.JointedGraph;
+using AI_PROG_SP21.Distributions;
+using AI_PROG_SP21.Services;
+using AI_PROG_SP21.Extensions.CSharp;
+
+namespace AI_PROG_SP21.AI.Actors.StateQueueActors
 {
     /// <summary>
     /// An actor that is able to traverse to targets in a graph of Transforms.

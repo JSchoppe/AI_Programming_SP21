@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Extensions.CSharp
+namespace AI_PROG_SP21.Extensions.CSharp
 {
     /// <summary>
     /// Provides extension methods for class that implement IList.

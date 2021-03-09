@@ -396,10 +396,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7732188948848299742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96be3825a6a8db046a2c895846b349ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0d47167547ffa4493c9bd3af8677cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tolerance: 0.5
+  tolerance: 0
   agent: {fileID: 7708312893608844354}
 --- !u!195 &7708312893608844354
 NavMeshAgent:
